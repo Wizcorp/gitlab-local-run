@@ -13,7 +13,7 @@ Then, in your `package.json`, you can add:
 ```json
 {
   "scripts": {
-    "unit-test": "gitlab-runner exec unit-test"
+    "unit-test": "gitlab-runner exec docker unit-test"
   }
 }
 ```

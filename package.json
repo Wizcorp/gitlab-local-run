@@ -1,6 +1,6 @@
 {
   "name": "gitlab-local-run",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Download the latest gitlab runner for the local platform",
   "main": "index.js",
   "bin": {

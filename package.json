@@ -1,13 +1,13 @@
 {
   "name": "gitlab-local-run",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download the latest gitlab runner for the local platform",
   "main": "index.js",
   "bin": {
     "gitlab-runner": "gitlab-runner"
   },
   "scripts": {
-    "postinstall": "node download.js",
+    "preinstall": "npm install ora && node download.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

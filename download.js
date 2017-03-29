@@ -21,7 +21,7 @@ const req = https.request({
     abort(new Error(`Received status code: ${res.statusCode}`))
   }
 
-  const file = fs.createWriteStream('./gitlab-runner', {
+  const file = fs.createWriteStream(`${__dirname}/gitlab-runner`, {
     mode: parseInt('0755', 8)
   })
 

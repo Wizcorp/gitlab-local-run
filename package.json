@@ -1,0 +1,29 @@
+{
+  "name": "gitlab-local-run",
+  "version": "1.0.0",
+  "description": "Download the latest gitlab runner for the local platform",
+  "main": "index.js",
+  "bin": {
+    "gitlab-runner": "gitlab-runner"
+  },
+  "scripts": {
+    "postinstall": "node download.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Wizcorp/gitlab-local-run.git"
+  },
+  "keywords": [
+    "gitlab"
+  ],
+  "author": "Marc Trudel <mtrudel@wizcorp.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stelcheck/gitlab-local-run/issues"
+  },
+  "homepage": "https://github.com/stelcheck/gitlab-local-run#readme",
+  "dependencies": {
+    "ora": "^1.2.0"
+  }
+}

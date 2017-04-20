@@ -1,14 +1,15 @@
 {
   "name": "gitlab-local-run",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Download the latest gitlab runner for the local platform",
   "main": "index.js",
   "bin": {
     "gitlab-runner": "gitlab-runner"
   },
   "scripts": {
-    "preinstall": "npm install ora && node download.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "node createEmptyExecutable.js",
+    "postinstall": "node download.js",
+    "test": "eslint --ext .js,.json ."
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "homepage": "https://github.com/stelcheck/gitlab-local-run#readme",
   "dependencies": {
     "ora": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-json": "^1.2.0",
+    "git-message": "1.0.1",
+    "pre-commit": "1.2.2"
   }
 }

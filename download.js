@@ -1,7 +1,9 @@
 const ora = require('ora')
 const https = require('https')
 const fs = require('fs')
-const path = require('path')
+
+// empty line
+console.log()
 
 const platform = process.platform
 const spinner = ora('Downloading gitlab-runner').start()
